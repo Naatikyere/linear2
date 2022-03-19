@@ -15,11 +15,90 @@
   --text-color: #95a2b3;
   --button-color: rgba(86, 67, 204, 1);
 }
+div {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+/* the starter which is the header */
+
 header {
-  position: sticky;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 64px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   backdrop-filter: blur(5px);
+  border-bottom: 2px soild, white;
+  color: var(--main-color);
+  padding: 0 2em 0 2em;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: 1;
+}
+/* container */
+.container {
+  padding-top: 64px;
+}
+/* the lings*/
+.links ul {
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  list-style: none;
+}
+.links ul li {
+  text-transform: capitalize;
+}
+.links ul li a {
+  padding: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* the sign-up button*/
+.button {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.button > p {
+  padding: 0 0.7em 0 0;
+  color: #828fff;
+}
+.button button {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    92.88deg,
+    rgb(69, 94, 181) 9.16%,
+    rgb(86, 67, 204) 43.89%,
+    rgb(103, 63, 215) 64.72%
+  );
+  cursor: pointer;
+  font-weight: 1.2em;
+  padding: 0 1rem;
+  height: 2rem;
+  text-transform: capitalize;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 0.3em;
+  border: none;
+  text-shadow: rgb(0 0 0/25%) 0 3px 8px;
+  transition: box-shadow 0.1s ease 0s;
+}
+/* starting point of the body*/
+.main {
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
