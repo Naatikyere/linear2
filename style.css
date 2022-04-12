@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  width: 0 auto;
+  width: auto ;
   line-height: 1.5;
   color: #8a8f98;
   background-color: #060606;
@@ -14,6 +14,10 @@
   --main-color: #f7f8f8;
   --text-color: #95a2b3;
   --button-color: rgba(86, 67, 204, 1);
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
 }
 div {
   display: inline-block;
@@ -28,10 +32,12 @@ header {
   position: fixed;
   display: flex;
   flex-direction: row;
+  z-index: 100;
   height: 64px;
   top: 0;
   left: 0;
   right: 0;
+  flex: 1;
   backdrop-filter: blur(5px);
   border-bottom: 1px soild white;
   color: var(--main-color);
@@ -85,7 +91,10 @@ ul li {
   text-shadow: rgb(0 0 0/25%) 0 3px 8px;
   transition: box-shadow 0.1s ease 0s;
 }
-
+.mind{
+  width: 100%;
+  height: 100%;
+}
 /* starting point of the body*/
 .main {
   padding-top: 8em;
@@ -110,23 +119,19 @@ ul li {
   margin: 0 1.7em;
 }
 .main_text p {
-  font-size: 5.6em;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 0 3.6em;
-  margin: 0 1em;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 .down_text {
   align-items: center;
   text-align: center;
-  font-size: 2em;
-  max-width: 80%;
-  padding-top: 1.5em;
+  font-size: 1.5em;
+  padding: 0 0.5rem;
 }
 .down_text p {
-  margin: 1.2em 0;
+  margin: 1.3em 0;
   font-size: 1em;
-  padding: 0 3em 0 5em;
-  margin: 0 0 0 10em;
   color: #95a2b3;
 }
 .spacer1 {
@@ -138,7 +143,6 @@ ul li {
 }
 .sbutton button {
   color: rgb(255, 255, 255);
-  height: 4rem;
   background: linear-gradient(
     92.88deg,
     rgb(69, 94, 181) 9.16%,
@@ -146,27 +150,26 @@ ul li {
     rgb(103, 63, 215) 64.72%
   );
   padding: 0 1em;
-  font-size: 1.3em;
   border: none;
   border-radius: 0.5em;
   text-align: center;
   align-content: center;
   text-shadow: rgb(0 0 0/25%) 0 3px 8px;
   transition: box-shadow 0.1s ease 0s;
-  width: 18%;
   cursor: pointer;
-  font-weight: 500;
+  height: 6.3rem;
+  font-size: 1.7rem;
 }
 .spacer2 {
   margin-bottom: 4.4em;
 }
 .second {
-  padding: 2em 0;
+  padding: 2.5em 0;
   display: flex;
   flex-direction: column;
 }
 
-.controller {
+/*.controller {
   padding: 0 4.1em;
   text-align: center;
   align-items: center;
@@ -174,7 +177,8 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+  padding-bottom: 3.5em;
+}*/
 .quote {
   margin: 1.2em 0 2em 0;
   text-transform: uppercase;
@@ -194,7 +198,6 @@ ul li {
 }
 .danger {
   margin: 1.3em;
-  flex: ;
   flex-grow: 1;
   max-width: 10em;
 }
@@ -207,17 +210,228 @@ ul li {
   flex-direction: column;
   text-align: center;
   padding: 4em 0;
-  max-width: 70%;
+  max-width: 100%;
   line-height: 1;
   margin-bottom: 1rem;
 }
 .mutitext h2 {
-  font-size: 4em;
+  font-size: 3em;
   color: var(--main-color);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5em;
 }
 .mutitext p {
   font-size: 2.2em;
   font-weight: 540;
 }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.inbox {
+  margin: 1.1em;
+  background: linear-gradient(180deg, #28292c 0%, rgba(39, 40, 43, 0.82) 100%);
+  min-width: 25em;
+  border-radius: 1em;
+  box-shadow: 0px 13px 40px rgb(0 0 0 / 30%), 0px 4px 4px rgb(0 0 0 / 20%);
+  width: calc(33.67% - 1.1em);
+  margin: 1em;
+  font-size: 1em;
+  flex: 1;
+  padding: 2.5em;
+  height: 17em;
+  text-align: justify;
+}
+.sign {
+  position: relative;
+  color: #5e6ad2;
+  height: 1.5em;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.two {
+  color: white;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.talk {
+  font-size: 1.6em;
+}
+.positioned {
+  padding-top: 4.5em;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+.mainthing {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+}
+.side {
+  justify-content: flex-start;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.sidein > h2 {
+  font-size: 1.5em;
+  color: white;
+}
+.sidein {
+  padding: 0 2rem;
+}
+.post {
+  border-radius: 0.8em 0 0 0.8em;
+  padding-bottom: 2rem;
+
+}
+.back {
+  position: relative;
+  background-image: url(/images/redyellow.png);
+  background-size: cover;
+  height: 19em;
+  width: 100%;
+  overflow: hidden;
+}
+.rob {
+  font-weight: 700;
+  color: white;
+}
+.lb {
+  font-weight: 700;
+  color: white;
+}
+.side_text {
+  margin-bottom: 0.5em;
+}
+.interface1 {
+  position: absolute;
+  top: 24%;
+  left: 8%;
+  z-index: 90;
+}
+.interface2 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  height: 80vmin;
+}
+.command{
+  background-color:#1c1d1f;
+  padding-top: 1.5em;
+  padding-bottom: 3.5em;
+}
+.dash{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+.lead{
+  background: linear-gradient(180deg,#35363a 0%,rgba(39,40,43,.82));
+  margin: 0 0.5rem;
+  width: 5.1rem;
+  height: 5.1rem;
+  line-height: 1.9;
+  text-align: center;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+}
+.dashchild{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1em;
+
+  }
+  .lead1 > h1{
+    color: var(--main-color);
+    font-size: 2.3em;
+    font-family: sans-serif;
+  }
+  .lead1 > p{
+    font-size: 1.6em;
+  }
+  .another{
+    margin-top: 2.5em;
+  }
+  .sceen{
+    position: relative;
+    background-image: url(/images/pinkred.png);
+    height: 50vh;
+    border-radius: 2.5em;
+    background-size: cover;
+    width: 125vw;
+  }
+  .come{
+    height: 69vmin;
+    position: absolute;
+    right: 2.5%;
+    top: 15%;
+    border-radius: 1.5em;
+}
+.this_that{
+  padding-top: 3.5em;
+  font-size: 1.5em;
+}
+.circles{
+  font-size: 2rem;
+}
+.one > h1{
+        color: var(--main-color);
+}
+
+.vermos{
+  color: var(--main-color);
+  font-size: 1em;
+}
+.display{
+  position: relative;
+  background-image: url(/images/redblue.png);
+  width: 100%;
+  background-size: cover;
+  border-radius: 1.5em;
+}
+.pic2{
+  padding-top: 2.5em;
+  width: 100%;
+}
+.cyi{
+  position: absolute;
+}
+.roadmap{
+  background-color: #1c1d1f;
+  font-size: 1.5em;
+}
+.roadmap1{
+ width: 100%;
+}
+.roadmap_text h1{
+  color: var(--main-color);
+}
+.roadmap_pic{
+  padding-top: 2em;
+  width: 100%;
+}
+.roadmap_background{
+  position: relative;
+  background-image: url(/images/redyellow.png);
+  width: 100%;
+  background-size: cover;
+  border-radius: 1.5em;
+}
+.timeline{
+  position: absolute;
+}
+.tools{
+  padding-top: 2rem;
+}
+.toolsec{
+  width: 100%;
+}
+    
+  
+
+
