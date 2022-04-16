@@ -343,12 +343,22 @@
         padding-left: 0.5em;
     }
 
+}
 
 @media(min-width:50em){
+    .back{
+        height: 80vh;
+    }
+    .sceen{
+        height: 80vh;
+    }
+    .come{
+        height: 65vh;
+        top: 10%;
+        left: 2.5em;
+    }
 }
-@media screen {
-    
-}
+  
 
 
 
