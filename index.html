@@ -12,9 +12,11 @@
     <div class="container">
       <header>
         <div class="logo">
-          <div class="logo_pic"><img src="/svg/logo.svg" /></div>
+          <div class="logo_pic">
+            <img src="/svg/logo.svg" class="pixlog" />
+          </div>
           <div class="logo_name">
-            <img src="/svg/logo-name.svg" alt="" />
+            <img src="/svg/logo-name.svg" alt="" class="logname" />
           </div>
         </div>
         <div class="links">
@@ -33,7 +35,11 @@
           <button>sign up</button>
         </div>
         <div class="burger">
-          <img src="/svg/burger.svg" alt="" />
+          <label for="mobile-menu-state" class="bur"
+            ><svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+              <path d="M0 0H18V1H0V0Z" fill="white"></path>
+              <path d="M0 10H18V11H0V10Z" fill="white"></path></svg
+          ></label>
         </div>
       </header>
       <div class="main">
@@ -53,7 +59,9 @@
           </div>
           <div class="spacer1"></div>
           <div class="sbutton">
-            <button type="submit">Sign up for free --></button>
+            <button type="submit" class="last_last">
+              Sign up for free &mdash;>
+            </button>
           </div>
           <div class="spacer2"></div>
           <div class="last_element"></div>
@@ -542,18 +550,622 @@
       <section class="tools">
         <div class="controller">
           <div class="toolsec">
-            <h1>Intergrated with your tools</h1>
+            <h2>Intergrated with your tools</h2>
             <p>
               Linear keeps everyone aligned and working more efficiently.
               Engineers, designers, and peers &ndash; all collabrating in one
               tool.
             </p>
           </div>
+
+          <div class="boxtool1">
+            <div class="box">
+              <div class="inner">
+                <img src="/svg/github.svg" alt="" class="github svgs" />
+                <div class="separator"></div>
+                <img src="/svg/gitlab.svg" alt="" class="gitlab svgs" />
+                <div class="separator"></div>
+                <div class="triangle">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 640 640"
+                    class="svgs"
+                  >
+                    <path
+                      d="M371.25 64.48C354.91 36.2 318.74 26.52 290.46 42.86C281.49 48.05 274.03 55.5 268.85 64.48C263.23 74.21 235.13 122.88 184.55 210.49C197.45 217.89 204.62 222.01 206.06 222.83C326.11 292.27 403.36 417.27 411.76 555.71C405.84 555.71 358.5 555.71 352.58 555.71C344.26 438.3 278.19 332.68 176.25 273.84C174.82 273.02 167.65 268.92 154.75 261.54L76.22 398.09C89.12 405.49 96.29 409.61 97.72 410.43C150.53 441.45 186.14 495.01 194.32 555.71C180.8 555.71 72.66 555.71 59.14 555.71C53.75 555.8 49.31 551.5 49.22 546.11C49.19 544.33 49.65 542.58 50.54 541.04C54.31 534.52 84.45 482.32 88.22 475.8C75.49 465.07 60.92 456.75 45.21 451.24C41.48 457.75 11.65 509.85 7.92 516.36C-8.4 544.65 1.31 580.81 29.6 597.13C38.58 602.31 48.77 605.04 59.14 605.04C71.54 605.04 133.55 605.04 245.15 605.04C245.15 590.25 245.15 582.04 245.15 580.39C245.17 501.34 207.18 427.1 143.05 380.88C146.01 375.76 169.68 334.74 172.64 329.62C254.88 386.54 303.98 480.16 304.07 580.18C304.07 581.83 304.07 590.05 304.07 604.87L461.69 604.87C461.69 590.08 461.69 581.87 461.69 580.22C461.55 423.95 382.55 278.29 251.64 192.94C257.63 182.56 305.49 99.54 311.47 89.16C314.17 84.49 320.14 82.9 324.81 85.6C326.29 86.45 327.51 87.68 328.37 89.16C354.46 134.35 563.17 495.85 589.25 541.04C591.96 545.7 590.38 551.68 585.72 554.39C584.18 555.28 582.43 555.74 580.65 555.71C574.55 555.71 525.73 555.71 519.62 555.71C520.4 572.18 520.48 588.65 519.62 605.08C525.75 605.08 574.74 605.08 580.87 605.08C613.53 605.08 640 578.6 640 545.94C640 535.57 637.27 525.38 632.09 516.4C579.92 426.01 423.42 154.86 371.25 64.48Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="innertext inner">
+                <h2>Automate tracking with GitHub, GitLab and Sentry</h2>
+                <p>
+                  Linear integrates with your pull requests and Sentry issues.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner">
+                <img src="/svg/figma.svg" alt="" class="figma svgs" />
+              </div>
+              <div class="innertext inner">
+                <h2>Preview and embed full Figma designs in Linear.</h2>
+                <p>Add Figma links to any issue as you work on your designs.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner">
+                <div class="tickets">
+                  <div class="ticket1">
+                    <svg
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                      class="svgs"
+                    >
+                      <path
+                        d="M7.467 5.801v7.81H1L7.467 5.8ZM7.468 3a3.23 3.23 0 1 1-6.46 0h6.46ZM8.533 13.61a3.23 3.23 0 1 1 6.46 0h-6.46ZM8.533 10.809v-7.81H15l-6.467 7.81Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="ticket2">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="svgs"
+                    >
+                      <path
+                        d="M13.1334 8.69691C13.132 8.81981 13.0823 8.93722 12.9949 9.02365C12.9075 9.11008 12.7896 9.15856 12.6667 9.15856C12.5438 9.15856 12.4258 9.11008 12.3385 9.02365C12.2511 8.93722 12.2013 8.81981 12.2 8.69691V4.49976C12.2013 4.37686 12.2511 4.25945 12.3385 4.17302C12.4258 4.08658 12.5438 4.0381 12.6667 4.0381C12.7896 4.0381 12.9075 4.08658 12.9949 4.17302C13.0823 4.25945 13.132 4.37686 13.1334 4.49976V8.69691ZM12.9705 11.6179C12.8984 11.6797 11.1696 13.1303 8 13.1303C4.83042 13.1303 3.10175 11.6796 3.02962 11.6179C2.93566 11.5373 2.87755 11.4227 2.86807 11.2993C2.85858 11.1759 2.89849 11.0538 2.97903 10.9598C3.05939 10.866 3.1737 10.8079 3.29686 10.7982C3.42002 10.7886 3.54199 10.8282 3.63599 10.9083C3.66339 10.9313 5.20711 12.1969 8.00005 12.1969C10.8281 12.1969 12.3479 10.9221 12.3629 10.9093C12.5582 10.7416 12.8534 10.7641 13.021 10.9599C13.1015 11.0538 13.1415 11.176 13.132 11.2994C13.1225 11.4228 13.0644 11.5374 12.9705 11.6179ZM2.86665 4.49976C2.86798 4.37686 2.91773 4.25945 3.00511 4.17302C3.09248 4.08658 3.21042 4.0381 3.33332 4.0381C3.45623 4.0381 3.57417 4.08658 3.66154 4.17302C3.74892 4.25945 3.79867 4.37686 3.8 4.49976V8.69691C3.79867 8.81981 3.74892 8.93722 3.66154 9.02365C3.57417 9.11008 3.45623 9.15856 3.33332 9.15856C3.21042 9.15856 3.09248 9.11008 3.00511 9.02365C2.91773 8.93722 2.86798 8.81981 2.86665 8.69691V4.49976ZM5.20005 3.5664C5.20193 3.44388 5.25192 3.32701 5.33923 3.24102C5.42654 3.15504 5.54416 3.10685 5.6667 3.10685C5.78924 3.10685 5.90687 3.15504 5.99418 3.24102C6.08149 3.32701 6.13147 3.44388 6.13335 3.5664V9.80083C6.13147 9.92336 6.08149 10.0402 5.99418 10.1262C5.90687 10.2122 5.78924 10.2604 5.6667 10.2604C5.54416 10.2604 5.42654 10.2122 5.33923 10.1262C5.25192 10.0402 5.20193 9.92336 5.20005 9.80083V3.5664ZM7.53335 3.33026C7.53334 3.26898 7.54541 3.2083 7.56886 3.15168C7.59231 3.09506 7.62668 3.04361 7.67001 3.00028C7.71335 2.95694 7.76479 2.92257 7.82141 2.89912C7.87803 2.87567 7.93872 2.86361 8 2.86362C8.06129 2.8636 8.12198 2.87566 8.1786 2.89911C8.23523 2.92255 8.28668 2.95692 8.33002 3.00026C8.37336 3.04359 8.40774 3.09504 8.43119 3.15166C8.45464 3.20829 8.46671 3.26898 8.4667 3.33026V10.0969C8.46537 10.2198 8.41562 10.3372 8.32824 10.4236C8.24087 10.5101 8.12293 10.5586 8.00003 10.5586C7.87712 10.5586 7.75918 10.5101 7.67181 10.4236C7.58443 10.3372 7.53468 10.2198 7.53335 10.0969V3.33026ZM9.8667 3.5664C9.86858 3.44388 9.91857 3.32701 10.0059 3.24102C10.0932 3.15504 10.2108 3.10685 10.3334 3.10685C10.4559 3.10685 10.5735 3.15504 10.6608 3.24102C10.7481 3.32701 10.7981 3.44388 10.8 3.5664V9.80083C10.7981 9.92336 10.7481 10.0402 10.6608 10.1262C10.5735 10.2122 10.4559 10.2604 10.3334 10.2604C10.2108 10.2604 10.0932 10.2122 10.0059 10.1262C9.91857 10.0402 9.86858 9.92336 9.8667 9.80083V3.5664ZM13.25 0.999756H2.75C1.78351 0.999756 1 1.78326 1 2.74976V13.2498C1 14.2162 1.78351 14.9998 2.75 14.9998H13.25C14.2165 14.9998 15 14.2162 15 13.2498V2.74976C15 1.78326 14.2165 0.999756 13.25 0.999756Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="ticket3">
+                    <svg
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      viewBox="0 0 18 18"
+                      class="svgs"
+                    >
+                      <g
+                        clip-path="url(#asdfh7862hu3irq2jh)"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M5.365 1C4.059 1 3 2.042 3 3.328v11.66h3.365c.653 0 1.182-.52 1.182-1.163V9.42a3.023 3.023 0 0 1-1.904-2.797c0-1.668 1.374-3.021 3.07-3.021a3.07 3.07 0 0 1 2.84 1.874h.212c.653 0 1.182-.52 1.182-1.164V1H5.365Z"
+                        ></path>
+                        <path
+                          d="M6.5 6.75a2.25 2.25 0 1 0 4.5 0 2.25 2.25 0 0 0-4.5 0Z"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="asdfh7862hu3irq2jh">
+                          <path
+                            fill="#fff"
+                            transform="translate(3 1)"
+                            d="M0 0h9.947v14H0z"
+                          ></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="innertext inner">
+                <h2>Link your customer tickets to your Linear workspace</h2>
+                <p>
+                  Create or link Linear issues from within Zendesk or Intercom
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner">
+                <img src="/svg/slack.svg" alt="" class="slack svgs" />
+              </div>
+              <div class="innertext inner">
+                <h2>Get updates and create issues with Slack</h2>
+                <p>
+                  Receive updates directly in your Slack channels and create
+                  issues from discussions.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner">
+                <div class="star">
+                  <svg
+                    width="48px"
+                    height="48px"
+                    viewBox="0 0 256 256"
+                    class="svgs"
+                  >
+                    <g>
+                      <path
+                        d="M159.998995,128.056308 C159.994973,137.568327 158.253449,146.670102 155.084116,155.080094 C146.678146,158.249427 137.568327,159.990951 128.052286,160.003016 L127.943692,160.003016 C118.435695,159.990951 109.325876,158.253449 100.919906,155.084116 C97.7505734,146.678146 96.0050275,137.568327 96.0010055,128.056308 L96.0010055,127.943692 C96.0050275,118.435695 97.7465515,109.325876 100.911862,100.923928 C109.317832,97.7505734 118.431673,96.0050275 127.943692,96.0010055 L128.052286,96.0010055 C137.568327,96.0050275 146.678146,97.7505734 155.084116,100.923928 C158.253449,109.325876 159.994973,118.435695 159.998995,127.943692 L159.998995,128.056308 L159.998995,128.056308 Z M254.222278,106.667337 L179.505672,106.667337 L232.33458,53.8344069 C228.183881,48.0025137 223.554564,42.5326002 218.50696,37.4849961 L218.50696,37.4809741 C213.459356,32.437392 207.989442,27.8161194 202.161571,23.6654203 L149.328641,76.4983504 L149.328641,1.78174391 C142.414831,0.619387274 135.311987,0.00402199529 128.064352,0 L127.931626,0 C120.683991,0.00402199529 113.585169,0.619387274 106.667337,1.78174391 L106.667337,76.4983504 L53.8344069,23.6654203 C48.0025137,27.8161194 42.5366222,32.441414 37.4970621,37.4890181 L37.4689081,37.509128 C32.429348,42.5486881 27.8120974,48.0105577 23.6613983,53.8344069 L76.4983504,106.667337 L1.78174391,106.667337 C1.78174391,106.667337 0,120.700079 0,127.955758 L0,128.044242 C0,135.299921 0.615365279,142.410809 1.78174391,149.332663 L76.4983504,149.332663 L23.6613983,202.165593 C31.9708405,213.825357 42.1746426,224.033181 53.8344069,232.338602 L106.667337,179.50165 L106.667337,254.222278 C113.581147,255.380613 120.671925,255.991956 127.907494,256 L128.088484,256 C135.328075,255.991956 142.426897,255.380613 149.328641,254.222278 L149.328641,179.50165 L202.165593,232.338602 C207.993464,228.187903 213.459356,223.562608 218.50696,218.519026 L218.519026,218.50696 C223.558586,213.459356 228.187903,207.989442 232.33458,202.165593 L179.497628,149.332663 L254.222278,149.332663 C255.384635,142.422875 255.991956,135.332097 256,128.092506 L256,127.907494 C255.991956,120.667903 255.384635,113.577125 254.222278,106.667337 L254.222278,106.667337 Z"
+                        fill="#FF4A00"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="innertext inner">
+                <h2>Connect with 1000+ tools using Zapier</h2>
+                <p>
+                  Create new issues based on triggers from Zapier applications.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="inner">
+                <div class="api">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 55 55"
+                    fill="none"
+                    class="svgs"
+                  >
+                    <rect
+                      x="4.58732"
+                      y="14.6694"
+                      width="37.5"
+                      height="37.5"
+                      rx="5.75"
+                      transform="rotate(-17 4.58732 14.6694)"
+                      stroke="#5E6AD2"
+                      stroke-width="0.8"
+                    ></rect>
+                    <rect
+                      x="1.23588"
+                      y="27.0591"
+                      width="37.767"
+                      height="37.767"
+                      rx="5.75"
+                      transform="rotate(-45 1.23588 27.0591)"
+                      stroke="#D25E5E"
+                      stroke-width="0.8"
+                    ></rect>
+                    <rect
+                      x="4.81375"
+                      y="40.4116"
+                      width="37.767"
+                      height="37.767"
+                      rx="5.75"
+                      transform="rotate(-75 4.81375 40.4116)"
+                      stroke="#A546DF"
+                      stroke-width="0.8"
+                    ></rect>
+                    <path
+                      d="M23.1484 27.8841H20.2691L19.5759 30.1177H18.4799L21.2644 21.4916H22.1827L24.9198 30.1177H23.8297L23.1484 27.8841ZM20.5653 26.9303H22.8581L21.7206 23.186L20.5653 26.9303ZM27.5147 26.6578V30.1177H26.4187V21.4916H29.215C29.6021 21.4995 29.9674 21.5608 30.3111 21.6753C30.6586 21.7898 30.9628 21.9557 31.2234 22.1729C31.4841 22.3902 31.6895 22.6588 31.8396 22.9787C31.9936 23.2986 32.0706 23.6659 32.0706 24.0806C32.0706 24.4953 31.9936 24.8627 31.8396 25.1826C31.6895 25.4986 31.4841 25.7652 31.2234 25.9824C30.9628 26.1996 30.6586 26.3655 30.3111 26.48C29.9674 26.5946 29.6021 26.6538 29.215 26.6578H27.5147ZM27.5147 25.7573H29.215C29.4678 25.7533 29.7008 25.7138 29.9141 25.6388C30.1274 25.5598 30.313 25.4492 30.471 25.307C30.629 25.1648 30.7515 24.993 30.8383 24.7916C30.9292 24.5862 30.9746 24.3532 30.9746 24.0925C30.9746 23.8318 30.9292 23.5968 30.8383 23.3875C30.7515 23.1781 30.629 23.0004 30.471 22.8543C30.317 22.7081 30.1314 22.5956 29.9141 22.5166C29.7008 22.4376 29.4678 22.3961 29.215 22.3922H27.5147V25.7573ZM33.6051 21.4916H38.8186V22.4455H36.751V29.1698H38.8186V30.1177H33.6051V29.1698H35.6253V22.4455H33.6051V21.4916Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="innertext inner">
+                <h2>Custom workflows using our API</h2>
+                <p>
+                  Query and mutate data using our GraphQL API to build custom
+                  workflows.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="boxtools"></div>
+      </section>
+      <section class="comments">
+        <div class="main_comments controller">
+          <h2>Loved by product people</h2>
+          <div class="mains">
+            <div class="comment_section1">
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@melissadooo.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Melissa Du <span class="link">@melissadooo · Aug 11</span>
+                  </p>
+                  <p class="pic_text">
+                    <a href="#">@linear</a>&mdash; We use it and love it. Fast,
+                    keyboard shortcuts, simple & clear UI.
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@phineyes.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    phineas <span class="link">@phineyes · Jun 18</span>
+                  </p>
+                  <p class="pic_text">
+                    Quick appreciation tweet for <a href="#">@linear</a>
+                    &ndash; we’ve been using it for the past week or so, and
+                    it’s made our team SO much more productive + it syncs
+                    automatically with our GitHub repos. Haven't been excited
+                    about a product like this in a while.
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@xavimb.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Xavi Magrinyà <span class="link">@xavimb · May 10</span>
+                  </p>
+                  <p class="pic_text">
+                    I’ve been lately using <a href="#">@linear</a>
+                    for tracking issues and I’m loving it. Very simple UI and
+                    lots of tricks and shortcuts for power users. If you have
+                    the chance, try it out!
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@Stammy.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Paul Stamatiou <span class="link">@Stammy · Jun 22</span>
+                  </p>
+                  <p class="pic_text">
+                    Started using <a href="#">@linear</a>to track and organize
+                    issues for my side-project iOS Stonks app.. So much better
+                    than what I was shoehorning Notion in to doing. it’s
+                    beautiful 😭 and the onboarding was great.
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@parkerehret.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Parker Ehret <span class="link">@parkerehret · May 22</span>
+                  </p>
+                  <p class="pic_text">
+                    I’ve been using <a href="#">@linear</a>for over 6 months
+                    now. It’s changed how I manage projects. It’s changed how I
+                    manage my own tasks. It’s changed what I expect from an
+                    application. It’s changed how I think about building
+                    software. Aces.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment_section2">
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@justHGH.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Geoffrey Hayes <span class="link">@justHGH · Sep 21</span>
+                  </p>
+                  <p class="pic_text">
+                    h/t to <a href="@linear"></a>. Engineering management has
+                    never been so fun.
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Karan Talati <span class="link"></span>
+                  </p>
+                  <p class="pic_text">
+                    <a href="#">@linear</a>has 10x'd our engineering and
+                    development speed 🙌 <a href="#">@alfredapp</a>'s workflows
+                    and snippets are great too 🙌
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@taylorcara_.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Taylor <span class="link">@taylorcara_ · Jun 18</span>
+                  </p>
+                  <p class="pic_text">
+                    If you haven’t tried out Linear App I would definitely
+                    recommend it for both designers and developers! It’s
+                    replaced all my current issue software 🤙🏻
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@exhaze.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Eugene Yaroslavtsev
+                    <span class="link">@exhaze · May 13</span>
+                  </p>
+                  <p class="pic_text">
+                    Tried out <a href="#">@linear</a>today. Blazing fast ⚡️.
+                    One of those rare tools that provides just enough user
+                    interface and then just gets out of the way to let you focus
+                    on your work.
+                  </p>
+                </div>
+              </div>
+              <div class="comment_box box">
+                <div class="pic_section">
+                  <img src="/images/@nbyodai.jpg" alt="" class="pic_pic" />
+                </div>
+                <div class="commet_text">
+                  <p class="pic_comment">
+                    Chibuzor Odai Obiora
+                    <span class="link">@nbyodai · Aug 3</span>
+                  </p>
+                  <p class="pic_text">
+                    Got access to <a href="#">@linear</a>might be one of the
+                    infinity stones for the software developer's infinity
+                    gauntlet. Took me all of 10 minutes to realise that there is
+                    no going back. Solid work! Kudos to the team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <footer></footer>
+      <section class="lastpart">
+        <div class="controller">
+          <div class="last_svg">
+            <svg width="231" height="232" viewBox="0 0 231 232" fill="none">
+              <g filter="url(#filter0_d)">
+                <rect
+                  x="64"
+                  y="54"
+                  width="103"
+                  height="103"
+                  rx="24.6017"
+                  fill="url(#paint0_linear)"
+                ></rect>
+              </g>
+              <g filter="url(#filter1_d)">
+                <path
+                  d="M110.385 135.764L85.2346 110.613C87.383 123.469 97.5297 133.615 110.385 135.764Z"
+                  fill="url(#paint1_linear)"
+                ></path>
+                <path
+                  d="M84.8606 103.815L117.183 136.138C119.101 136.033 120.972 135.751 122.779 135.31L85.6889 98.2191C85.2472 100.027 84.9658 101.897 84.8606 103.815Z"
+                  fill="url(#paint2_linear)"
+                ></path>
+                <path
+                  d="M87.3004 93.4064L127.592 133.698C129.058 133.067 130.464 132.325 131.801 131.483L89.5158 89.1976C88.6734 90.5345 87.9314 91.9409 87.3004 93.4064Z"
+                  fill="url(#paint3_linear)"
+                ></path>
+                <path
+                  d="M92.2479 85.5055C97.8708 78.9861 106.192 74.8594 115.476 74.8594C132.411 74.8594 146.139 88.5875 146.139 105.522C146.139 114.807 142.012 123.128 135.493 128.751L92.2479 85.5055Z"
+                  fill="url(#paint4_linear)"
+                ></path>
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d"
+                  x="0"
+                  y="0.54"
+                  width="231"
+                  height="231"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feFlood>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dy="10.54"></feOffset>
+                  <feGaussianBlur stdDeviation="32"></feGaussianBlur>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  ></feBlend>
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  ></feBlend>
+                </filter>
+                <filter
+                  id="filter1_d"
+                  x="66.2431"
+                  y="64.2208"
+                  width="98.5135"
+                  height="98.5135"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feFlood>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dy="7.97893"></feOffset>
+                  <feGaussianBlur stdDeviation="9.30875"></feGaussianBlur>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.0229167 0 0 0 0 0.0380147 0 0 0 0 0.183333 0 0 0 0.6 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  ></feBlend>
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  ></feBlend>
+                </filter>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="64"
+                  y1="54"
+                  x2="64"
+                  y2="157"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#636DCE"></stop>
+                  <stop offset="0.984375" stop-color="#2C3480"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear"
+                  x1="146.139"
+                  y1="157.099"
+                  x2="146.139"
+                  y2="74.8594"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#D6D9FF"></stop>
+                  <stop offset="0.848958" stop-color="#FCFCFF"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear"
+                  x1="146.139"
+                  y1="157.099"
+                  x2="146.139"
+                  y2="74.8594"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#D6D9FF"></stop>
+                  <stop offset="0.848958" stop-color="#FCFCFF"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint3_linear"
+                  x1="146.139"
+                  y1="157.099"
+                  x2="146.139"
+                  y2="74.8594"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#D6D9FF"></stop>
+                  <stop offset="0.848958" stop-color="#FCFCFF"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint4_linear"
+                  x1="146.139"
+                  y1="157.099"
+                  x2="146.139"
+                  y2="74.8594"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#D6D9FF"></stop>
+                  <stop offset="0.848958" stop-color="#FCFCFF"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="last_msg">
+            <h2>Get started with linear today</h2>
+            <p>
+              Linear keeps everyone aligned and working without friction.
+              Engineers, designers, and peers – all collaborating in one tool.
+            </p>
+          </div>
+          <div class="last_button">
+            <button class="last_last">Sign up for free &mdash;></button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer_head">
+          <div class="firstleg">
+            <img src="/svg/logo.svg" alt="" class="pixlog call" />
+            <p class="veep">linear &ndash; designed worldwide</p>
+          </div>
+          <div class="secondleg">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="footer-logo"
+            >
+              <path
+                d="M16 3.42059C15.4484 3.66118 14.8558 3.82375 14.2328 3.89723C14.8684 3.52268 15.3559 2.92834 15.5858 2.22085C14.9912 2.56809 14.3326 2.82039 13.6317 2.95565C13.0702 2.36781 12.2708 1.99976 11.3856 1.99976C9.68647 1.99976 8.30842 3.35621 8.30842 5.02999C8.30842 5.26669 8.33617 5.49688 8.38769 5.71928C5.82912 5.59247 3.56254 4.38623 2.04444 2.55378C1.78019 3.00247 1.62825 3.52268 1.62825 4.0767C1.62825 5.12753 2.17194 6.05546 2.99705 6.59843C2.49234 6.58218 2.01801 6.44627 1.60314 6.21933V6.25835C1.60314 7.72599 2.66344 8.95045 4.07188 9.22876C3.81291 9.29769 3.5414 9.3341 3.2613 9.3341C3.06311 9.3341 2.86955 9.31589 2.68193 9.28078C3.07368 10.4838 4.20994 11.3603 5.55695 11.3837C4.50326 12.1966 3.17608 12.681 1.73461 12.681C1.48622 12.681 1.24113 12.6667 1 12.6388C2.3622 13.4991 3.97939 13.9998 5.71681 13.9998C11.3783 13.9998 14.4733 9.38417 14.4733 5.38114C14.4733 5.25108 14.47 5.11973 14.4641 4.98968C15.0652 4.5618 15.5871 4.02923 15.9987 3.42254L16 3.42059Z"
+              ></path>
+            </svg>
+
+            <img src="/svg/github.svg" alt="" class="footer-logo" />
+            <img src="/svg/slack.svg" alt="" class="footer-logo" />
+          </div>
+        </div>
+        <div class="footer_body">
+          <div class="product div-dash">
+            <h2 class="footer-head">Product</h2>
+            <h3 class="footer-body">Pricing</h3>
+            <h3 class="footer-body">Changelog</h3>
+            <h3 class="footer-body">Docs</h3>
+            <h3 class="footer-body">Linear Method</h3>
+            <h3 class="footer-body">Download</h3>
+          </div>
+          <div class="company div-dash">
+            <h2 class="footer-head">Company</h2>
+            <h3 class="footer-body">About us</h3>
+            <h3 class="footer-body">Blog</h3>
+            <h3 class="footer-body">Careers</h3>
+            <h3 class="footer-body">Customer</h3>
+            <h3 class="footer-body">Twitter</h3>
+          </div>
+          <div class="resouce div-dash">
+            <h2 class="footer-head">Resouces</h2>
+            <h3 class="footer-body">Community</h3>
+            <h3 class="footer-body">Contact</h3>
+            <h3 class="footer-body">Privacy policy</h3>
+            <h3 class="footer-body">Teems of service</h3>
+          </div>
+          <div class="developer div-dash">
+            <h2 class="footer-head">Developer</h2>
+            <h3 class="footer-body">API</h3>
+            <h3 class="footer-body">Status</h3>
+            <h3 class="footer-body">GitHub</h3>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

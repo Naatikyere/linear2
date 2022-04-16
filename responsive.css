@@ -1,7 +1,6 @@
 
-@media(min-width:12em)
-{
-    :root {
+@media (min-width:12em)
+{    :root {
         width: auto ;
         line-height: 1.1;
         color: #8a8f98;
@@ -27,22 +26,50 @@
     .links{
         display: none;
     }
-    .main_text  p{
+    .main_text{
         padding: 0;
-        font-family: sans-serif;
     }
-
-    .sbutton button{
-        width: 60%;
+    .main_text  p{
+        font-size: 2.2rem;
+        font-family: sans-serif;
         
     }
+    .down_text p{
+        font-size: 1.7rem;
+    }
+    .quote{
+        font-size: 0.8em;
+    line-height: inherit;
+    letter-spacing: 0.3rem;
+    }
+    .mutitext{
+        font-size:1rem ;
+        
+    }
+    .mutitext h2{
+        font-size: 1.8em;
+        line-height: 1.2;
+    }
+    .mutitext p{
+        font-size: 1.2em;
+    }
+    .inbox{
+        font-size: 0.8em;
+    }
+    .side{
+        font-size: 1.3rem;
+    }
+    .sidein p{
+        font-size: 1.1rem;
+        white-space: 0.3em;
+    }
+    
     .icons{
         display: flex;
         flex-direction: column;
         font-size: 1.5rem;
     }
     .mainthing{
-        display: flex;
         flex-direction: column;
     }
     .post{
@@ -50,6 +77,22 @@
     }
     .back{
         border-radius: 0.5em;
+        height: 19rem;
+    }
+    .lead{
+        width: 3.4rem;
+        height: 3.4rem;
+        font-size: 2rem;
+        
+    }
+    .sceen{
+        height: 40vh;
+        width: 90vw;
+    }
+    .come{
+        height: 25vh;
+        right: auto;
+        left: 0.4em;
     }
     .interface1{
         height: 98vmin;
@@ -58,57 +101,208 @@
 
     .circles{
           text-align: left;
+          font-size: 1.2rem;
       }
       .cyi{
-          height: 80vmin;
-          width: 100vw;
-          top: 9%;
-          left: 9%;
+          height: 30vh;
+          top: 12%;
+          left: 2%;
+          width: 80vw;
       }
       .display{
-          height: 50vh;
+          height: 40vh;
       }
       .roadmap1{
           text-align: left;
-          font-size: 1.5em;
-      }
-      .roadmap_text h1{
-          font-size: 2.5rem;
+          font-size: 1.2em;
       }
       .timeline{
           
-          height: 80vmin;
-          width: 100vw;
+        height: 30vh;
+        width: 75vw;
           top: 9%;
-          left: 9%;
+          left: 5%;
           bottom: -8%;
       }
       .roadmap_background{
-              height: 100vmin;
+              height: 40vh;
    
       }
-      .tools{
-          font-size: 1.5em;
+      .mains{
+          flex-direction: column;
       }
       .toolsec{
           text-align: left;
+          font-size: 1.3em;
       }
       .toolsec h1{
           color: var(--main-color);
           font-size: 2.5rem;
       }
-      .toolsec p{
-          font-size: 1.4em;
+      .boxtool1{
+          flex-direction: column;
       }
+      .box{
+        flex-direction: column; 
+        width:100%;
+        margin: 2vw 0; 
+        font-size: 0.9rem;
+      }
+      .comments{
+          line-height: 1.2;
+      }
+      .main_comments{
+          flex-direction: column;
+      }
+      .main_comments h2{
+        font-weight: 900;
+        line-height:1.2 ;
+      }
+      .pic_pic{
+        height: 10vmin;
+      }
+      .comment_box{
+          width: 100% ;
+          font-size: 0.7em;
+      }
+      footer{
+          flex-direction: column;
+      }
+      .footer_body{
+          flex-direction: column;
+      }
+
     }
-@media(min-width:25em){
+@media(min-width:43em){
+    .links{
+        display: block;
+    }
     .main_text p{
-        padding: 0 3.6em;
+    font-size: 3rem;
     }
-}
+    .quote{
+        font-size: 1em;
+    }
+    .icons{
+        flex-direction: row;
+        font-size: 1.2em;
+    }
+    .mutitext h2{
+        font-size: 2.5rem;
+    }
+    .mutitext p {
+        font-size: 1.7em;
+    }
+    .third{
+        padding-bottom: 3.3em;
+        margin-bottom: 2em;
+    }
+    .side{
+        font-size: 1.6em;
+    }
+    .sidein p{
+        font-size: 1.6rem;
+    }
+    .post {
+        width: 70%;
+        height: 50vh;
+    }
+    .back{
+        height: 40rem;
+        top: -6em;
+    }
+    .mainthing{
+        flex-direction: row;
+    }
+    .positioned{
+        padding-bottom: 5em;
+    }
+    .command{
+        flex-direction: row;
+    }
+    .circles{
+        flex-direction: row-reverse;
+    }
+    .roadmap1{
+        flex-direction: row;
+    }
+    .mains{
+        flex-direction: row;
+    }
+    .comment_section1{
+        margin-right: 0.7em;
+    }
+    .main_comments h2{
+        font-size: 2.6rem;
+        padding: 1em 0;
+    }
+    .pic2{
+        width: 48%;
+    }
+    .one{
+        font-size: 1.5em;
+    }
+    .display{
+        height: 90vh;
+        left: -20%;
+        width: 50vw;
+        top: -5%;
+        overflow: hidden;
+    }
+    .cyi{
+        height: 80vh;
+    top: 12%;
+    left: -72%;
+    width: 80vw;
+
+    }
+    .roadmap_text{
+        align-self: center;
+        font-size: 1.5em;
+    }
+    .roadmap_pic{
+        width: 40%;
+    }
+    .roadmap_background{
+        height: 89vh;
+        width: 50vw;
+        right: -3%;
+        overflow: hidden;
+    }
+    .pic_pic{
+        height: 7vmin;
+    }
+    .timeline{
+
+    }
+    .last_msg h2{
+        font-size: 2.5rem;
+    }
+    .last_msg p{
+        font-size: 1.6em;
+    }
+    .footer_body{
+        flex-direction: row;
+        margin-top: 3.5em;
+    }
+    .footer-body{
+        margin: 1.1em 0 1.6em 0;
+    }
+    .div-dash{
+        margin-right: 7em;
+    }
+    .footer-logo{
+        width: 5vw;
+        height: 4.3vh;
+        margin-left: 0.2em;
+        padding-left: 0.5em;
+    }
 
 
 @media(min-width:50em){
+}
+@media screen {
+    
 }
 
 
