@@ -58,6 +58,10 @@ header {
 .bur{
   display: flex;
 }
+.burger{
+  position: absolute;
+  right: 1.5em;
+}
 /* the lings*/
 .links ul {
   display: flex;
@@ -80,7 +84,8 @@ ul li {
   flex-shrink: 0;
 }
 .button > p {
-  padding: 0 0.7em 0 0;
+  padding-left: 0.7em;
+  padding-right: 1em;
   color: #828fff;
 }
 .button button {
@@ -374,7 +379,6 @@ ul li {
   }
   .come{
     position: absolute;
-    top: 15%;
     border-radius: 1.5em;
 }
 .this_that{
@@ -429,6 +433,7 @@ ul li {
   margin-bottom: 1.3rem;
 }
 .roadmap_pic{
+  position: relative;
   padding-top: 2em;
 }
 .roadmap_background{
